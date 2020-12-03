@@ -1,0 +1,18 @@
+model=B-1B Lancer,maxSpeed=1050,maxFlightDistance=21000,maxLoadCapacity=80000,type=BOMBER
+model=B-2 Spirit,maxSpeed=1030,maxFlightDistance=22000,maxLoadCapacity=70000,type=BOMBER
+model=B-52 Stratofortress,maxSpeed=1000,maxFlightDistance=20000,maxLoadCapacity=80000,type=BOMBER
+model=F-15,maxSpeed=1500,maxFlightDistance=12000,maxLoadCapacity=10000,type=FIGHTER
+model=F-22,maxSpeed=1550,maxFlightDistance=13000,maxLoadCapacity=11000,type=FIGHTER
+model=C-130 Hercules,maxSpeed=650,maxFlightDistance=5000,maxLoadCapacity=110000,type=TRANSPORT
+model=Boeing-737,maxSpeed=900,maxFlightDistance=12000,maxLoadCapacity=60500,passengersCapacity=164
+model=Boeing-737-800,maxSpeed=940,maxFlightDistance=12300,maxLoadCapacity=63870,passengersCapacity=192
+model=Boeing-747,maxSpeed=980,maxFlightDistance=16100,maxLoadCapacity=70500,passengersCapacity=242
+model=Airbus A320,maxSpeed=930,maxFlightDistance=11800,maxLoadCapacity=65500,passengersCapacity=188
+model=Airbus A330,maxSpeed=990,maxFlightDistance=14800,maxLoadCapacity=80500,passengersCapacity=222
+model=Embraer 190,maxSpeed=870,maxFlightDistance=8100,maxLoadCapacity=30800,passengersCapacity=64
+model=Sukhoi Superjet 100,maxSpeed=870,maxFlightDistance=11500,maxLoadCapacity=50500,passengersCapacity=140
+model=Bombardier CS300,maxSpeed=920,maxFlightDistance=11000,maxLoadCapacity=60700,passengersCapacity=196
+model=ExperimentalPlane New12,maxSpeed=1000,maxFlightDistance=25000,maxLoadCapacity=50000,type=LIFTING_BODY,classificationLevel=SECRET
+model=ExperimentalPlane New55,maxSpeed=1500,maxFlightDistance=25000,maxLoadCapacity=10000,type=HIGH_ALTITUDE,classificationLevel=TOP_SECRET
+model=ExperimentalPlane New88,maxSpeed=2000,maxFlightDistance=5000,maxLoadCapacity=5000,type=VTOL,classificationLevel=SECRET
+
