@@ -2,37 +2,22 @@ import Planes.ExperimentalPlane;
 import models.ClassificationLevel;
 import models.MilitaryType;
 import org.testng.Assert;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import Planes.MilitaryPlane;
 import Planes.PassengerPlane;
 import Planes.Plane;
-
-import java.io.IOException;
 import java.util.*;
 
 public class AirportTest {
     private static PassengerPlane planeWithMaxPassengerCapacity = new PassengerPlane("Boeing-747", 980, 16100, 70500, 242);
-    private static List<Plane> planes;
-
-    static {
-        try {
-            planes = new AirportService().setPlanesFromFile();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-//    @BeforeTest
-//    private void setUp()  throws IOException {
-//        planes = new AirportService().setPlanesFromFile();
-//    }
+    private static List<Plane> planes = new AirportService().definePlanesFromList(AirportService.setPlanesFromFile());
 
     @Test
     public void testGetTransportMilitaryPlanes() {
         Airport airport = new Airport(planes);
         List<MilitaryPlane> transportMilitaryPlanes = airport.getTransportMilitaryPlanes();
         boolean flag = false;
+
         for (MilitaryPlane militaryPlane : transportMilitaryPlanes) {
             if ((militaryPlane.getMilitaryType() == MilitaryType.TRANSPORT)) {
                 flag = true;

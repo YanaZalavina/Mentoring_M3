@@ -1,9 +1,18 @@
 package Planes;
 
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.Setter;
+
 import java.util.Objects;
+@Getter
+@Setter
+@EqualsAndHashCode
 
 public class PassengerPlane extends Plane{
     private int passengersCapacity;
+
+    public PassengerPlane(){}
 
     public PassengerPlane(String planeModel, int maxSpeed, int maxFlightDistance, int maxLoadCapacity, int passengersCapacity) {
         super(planeModel, maxSpeed, maxFlightDistance, maxLoadCapacity);
@@ -14,8 +23,8 @@ public class PassengerPlane extends Plane{
         this.passengersCapacity = passengersCapacity;
     }
 
-    public int getPassengersCapacity() {
-        return passengersCapacity;
+   public int getPassengersCapacity() {
+      return passengersCapacity;
     }
 
     @Override

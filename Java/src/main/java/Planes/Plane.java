@@ -15,6 +15,8 @@ abstract public class Plane {
         this.maxLoadCapacity = maxLoadCapacity;
     }
 
+    public Plane(){}
+
     public void setPlaneModel(String planeModel) {
         this.planeModel = planeModel;
     }

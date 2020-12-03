@@ -1,11 +1,18 @@
 package Planes;
 
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.Setter;
 import models.MilitaryType;
 import java.util.Objects;
-
+@Getter
+@Setter
+@EqualsAndHashCode
 public class MilitaryPlane extends Plane{
 
     private MilitaryType militaryType;
+
+    public MilitaryPlane(){}
 
     public MilitaryPlane(String model, int maxSpeed, int maxFlightDistance, int maxLoadCapacity, MilitaryType militaryType) {
         super(model, maxSpeed, maxFlightDistance, maxLoadCapacity);

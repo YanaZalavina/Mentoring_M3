@@ -1,12 +1,17 @@
 package Planes;
 
+import lombok.Getter;
+import lombok.Setter;
 import models.ClassificationLevel;
 import models.ExperimentalTypes;
-
+@Getter
+@Setter
 public class ExperimentalPlane extends Plane {
 
     private ExperimentalTypes experimentalType;
     private ClassificationLevel classificationLevel;
+
+    public ExperimentalPlane(){}
 
     public ExperimentalPlane(String model, int maxSpeed, int maxFlightDistance, int maxLoadCapacity, ExperimentalTypes experimentalType, ClassificationLevel classificationLevel) {
         super(model, maxSpeed, maxFlightDistance, maxLoadCapacity);
